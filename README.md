@@ -3,5 +3,5 @@ https://adventofcode.com/
 
 | Day  | Code |
 | ------------- | ------------- |
-| 1  |  |
+| 1  | [link](Day01/day1.py) |
 | 2  |   |
