@@ -6,6 +6,7 @@ def asciitoTask1Value(x):
         return ord(x) - 97 + 1
     else:
         return ord(x) - 65 + 27
+    # Task 1
 
 
 with open("input.txt") as f:
@@ -19,4 +20,28 @@ with open("input.txt") as f:
                     if i == j:
                         same = i
             total += asciitoTask1Value(same)
+#   Task 2
+# counter = 0
+# badge: list
+# with open("input.txt") as f:
+#     for line in f.readlines():
+#         if (line != "") & (line != "\n"):
+#             if counter == 0:
+#                 firstLine = list(line)
+#                 counter += 1
+#             elif counter == 1:
+#                 secondLine = list(line)
+#                 counter += 1
+#             elif counter == 2:
+#                 thirdLine = list(line)
+#                 # compare array logic
+#                 for i in firstLine:
+#                     for j in secondLine:
+#                         if (i == j)&(i != "") & (i != "\n"):
+#                             for k in thirdLine:
+#                                 if k == i:
+#                                     same = i
+#                 counter = 0
+#
+#                 total += asciitoTask1Value(same)
 print(total)
